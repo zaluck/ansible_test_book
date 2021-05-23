@@ -1,0 +1,29 @@
+vagrant init ubuntu/trusty64
+vagrant up
+vagrant ssh
+vagrsnt ssh-config
+ssh vagrant@127.0.0.1 -p 2222 -i D:/_WORK/_DevOps/_VAGRANT/ansible_test_book/test1/.vagrant/machines/default/virtualbox/private_key
+------
+apt update
+apt install virtualbox
+apt install vagrant
+
+$ vagrant plugin install vagrant-libvirt
+$ sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager
+$ sudo adduser fabio libvirt
+$ sudo adduser fabio libvirt-qemu
+$ sudo /etc/init.d/libvirtd restart
+
+
+
+-------------
+$ sudo apt update
+$ sudo apt install software-properties-common
+$ sudo add-apt-repository --yes --update ppa:ansible/ansible
+$ sudo apt install ansible
+--------------
+ansible testserver -i hosts -m ping
+ansible testserver -i hosts -m ping -vvvv
+
+
+--------------------------
