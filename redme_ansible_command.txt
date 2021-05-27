@@ -6,6 +6,10 @@ $ sudo apt install ansible
 --------------
 ansible testserver -i hosts -m ping
 ansible testserver -i hosts -m ping -vvvv
-
-
 --------------------------
+ansible all -i hosts -m ping
+ansible all -i hosts -a "ip addr show dev eth0"
+ansible all -i hosts -a "date"
+ansible all -i hosts -a "uptime"
+
+
