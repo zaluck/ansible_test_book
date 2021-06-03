@@ -3,6 +3,8 @@ vagrant up
 vagrant ssh
 vagrant ssh-config
 ssh vagrant@127.0.0.1 -p 2222 -i D:/_WORK/_DevOps/_VAGRANT/ansible_test_book/test1/.vagrant/machines/default/virtualbox/private_key
+vagrant destroy
+vagrant down
 ------
 apt update
 apt install virtualbox

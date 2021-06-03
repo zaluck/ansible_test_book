@@ -4,6 +4,12 @@ $ sudo apt install software-properties-common
 $ sudo add-apt-repository --yes --update ppa:ansible/ansible
 $ sudo apt install ansible
 --------------
+ssh-keygen
+ssh-copy-id -i ~/.ssh/id_rsa.pub vagrant@192.168.100.100
+ssh-copy-id -i ~/.ssh/id_rsa.pub vagrant@192.168.100.101
+ssh-copy-id -i ~/.ssh/id_rsa.pub vagrant@192.168.100.102
+
+-----------------
 ansible testserver -i hosts -m ping
 ansible testserver -i hosts -m ping -vvvv
 --------------------------
