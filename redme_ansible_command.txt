@@ -3,6 +3,7 @@ $ sudo apt update
 $ sudo apt install software-properties-common
 $ sudo add-apt-repository --yes --update ppa:ansible/ansible
 $ sudo apt install ansible
+ansible --version
 --------------
 ssh-keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub vagrant@192.168.100.100

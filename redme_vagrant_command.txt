@@ -9,6 +9,7 @@ vagrant down
 apt update
 apt install virtualbox
 apt install vagrant
+vagrant --version
 
 $ vagrant plugin install vagrant-libvirt
 $ sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager
